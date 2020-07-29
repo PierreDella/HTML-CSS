@@ -1,0 +1,111 @@
+/* 
+    A N I M A T I O N
+*/
+/* #burger {
+    width: 42px;
+    height: 18px;
+    cursor: pointer;
+    position: absolute;
+    right: 120px;
+    top: 30px;
+}
+span balise de type inline qui ne comprend pas largeur ni
+hauteur.
+Position absolute pour ne pas être affecté par les 
+autres elements
+
+#burger span{
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    transform: translateY(-50%);
+    transition: background-color 0.5s ease-in-out;
+}
+
+" background-color 0.5s ease-in-out;"
+    Le départ et la fin sont lents.
+    ease-in : Lent sur le début et accélère de plus en plus vers la fin.
+    ease-out : Rapide sur le début et décèlere sur la fin.
+    ease : Rapide sur le début et ralenti sur la fin.
+    linear : La vitesse est constante sur toute la durée de l'animation.
+
+#burger span::before, #burger span::after{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    transition: transform 0.5s ease-in-out;
+}
+
+#burger span::before{
+    transform: translateY(-10px);
+}
+
+#burger span::after{
+    transform: translateY(10px);
+}
+
+#burger.active span{
+    background-color: transparent;
+}
+#burger.active span::before{
+    transform: translateY(0px) rotateZ(45deg);
+}
+#burger.active span::after{
+    transform: translateY(0px) rotateZ(-45deg);
+} 
+
+*/
+.mobile{
+	background-color: rgba(32, 32, 36, 0.397);
+	position: fixed;
+    display: flex;
+    padding: 5em 5em 1em 1em;
+    flex-direction: column;
+    justify-content: space-evenly;
+    right: 0;
+    top: 0;
+	opacity: 0;
+	overflow: hidden;
+	height: 0vh;
+	transition: height 1s, opacity 1s;
+	text-align: left;
+}
+.mobile.open{
+	height: 100%;
+	opacity: 1;
+}
+.mobile.open a:hover{
+    color: white;
+}
+#burger{
+	padding: 0.5em;
+	position: absolute;
+	top: 3vh;
+	right: 3vh;
+	cursor: pointer;
+	display: none;
+}
+
+#burger.fa-times{
+    color: rgb(226, 81, 202);;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

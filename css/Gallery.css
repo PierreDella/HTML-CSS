@@ -1,0 +1,117 @@
+
+.active {
+    background-color: white;
+}
+
+
+
+.gallery figure{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+}   
+.gallery figure .miami{
+    width: 25%;
+    padding: 0;
+    position: relative;
+  
+}
+
+.gallery figure img{
+    position: relative;
+    width: 100%;
+
+}
+
+
+/* 
+--------------------LIENS MULTIMEDIAS--------------------
+*/
+
+.i-modal:hover :before{
+    background-color: rgba(255,255,255,0.3);
+}
+
+.miami:hover a:before{
+    font-size: 9vh;
+    color: rgba(206, 19, 231, 0.657);
+    text-shadow: 0px 0px 5px rgba(206, 19, 231, 0.657);
+}
+.g-video a::before {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    content: '\f144';
+    color: rgba(206, 19, 231, 0.657);
+    z-index: 1;
+    font-size: 4vw;
+    height: 5%;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 200;
+}
+.g-audio a::before {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    content: '\f8cf';
+    color: rgba(206, 19, 231, 0.657);
+    z-index: 1;
+    font-size: 4vw;
+    height: 5%;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 200;
+}
+
+/* 
+        NAVIGATION GALERIE
+*/
+#bouton-gallery>a:hover{
+    color:rgb(233, 1, 194); 
+    font-weight: bold;
+}
+.gallery{
+    font-family: 'Orbitron', sans-serif;
+}
+
+.gallery div{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 4em;
+    border-bottom: 1px solid rgba(88, 18, 179, 0.404);
+}
+.gallery nav{
+    margin-left: 4em;
+    padding-top: 1em;
+}
+.gallery nav a{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    padding-right: 1em;
+}
+
+#nav-gallery>a:hover{
+    color: black;
+    text-decoration: none;
+    padding-right: 1em;
+    font-weight: bold;
+}
+
+
+
+
+
+/* .i-modal a::before{
+    color: white;
+    position: absolute;
+    line-height: 200px;
+    font-size: 5em;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.3);
+    display: none;
+}
+.gallery .i-modal:hover{
+    display: initial;
+} */

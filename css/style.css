@@ -1,0 +1,491 @@
+*{
+    box-sizing: border-box;
+   
+}
+body
+{
+    background: linear-gradient(to top , 
+    transparent, 5%, #ffbabf),
+    url("images/triangle.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position:50% 0 ;
+}
+#wrapper{
+    max-width: 1200px;
+    margin: auto;
+}
+main{
+    background-color:white ;
+}
+.border{
+    background-color:rgb(233, 1, 194) ;
+    border: 1px rgb(233, 1, 194) solid;
+    border-radius: 10%;     
+    width: 80px;
+    margin: auto;
+}
+/*
+    N A V I G A T I O N 
+        Nav/LOGO
+*/
+#navigation{    
+    display: flex;
+    justify-content: space-evenly ;
+}
+.topbar-logo img{
+        width: 135px;
+        cursor: pointer;
+        -webkit-filter: grayscale(0) blur(0px);
+        filter: grayscale(0) blur(0px);
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+}
+.topbar-logo img:hover{
+    width: 135px;
+    border-radius: 50%;  /* on arrondit l'image */
+    -webkit-transform: rotate(360deg); /* rotation de l'image */
+    transform: rotate(360deg);
+}
+#top-nav{
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+#top-nav a{
+    position: relative;
+    margin: 12px;
+    display: inline-block;
+    text-decoration: none;
+    color: #5C5C5C;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+}
+
+#top-nav a:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    color:#a1f0eb;
+    text-decoration: underline;
+}
+
+/* 
+     H E A D E R
+    B A N N E R # 1
+    parallax/bouton1
+*/
+
+header{
+    padding: 8em;
+    background-image: url("images/2740217.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: large;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+}
+header img{
+    width: 100%;
+	height: 100%;
+    object-fit: cover;
+}
+header h1, header p {
+    text-shadow: -1px 0 #fffcc5, 0 1px #fffcc5,
+    1px 0 #fffcc5, 0 -1px #fffcc5;
+    color: rgb(233, 1, 194);
+
+}
+header p {
+text-shadow: -1px 0 #fffcc5, 0 1px #fffcc5,
+1px 0 #fffcc5, 0 -1px #fffcc5;
+}
+
+header .bouton-banner-top{ 
+    font-weight: bold;
+    margin-top: 4em;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #01e4ff;
+    background-color: white;
+} 
+.bouton-banner-top:hover{
+    border: 2px solid rgb(58, 70, 95);
+    color: rgb(233, 1, 194);
+    background-color: rgb(58, 70, 95);
+}
+
+/* 
+                S E C T I O N
+                    # 1
+*/
+
+.about{
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    flex-direction:row;
+    padding: 3em 8em;
+}
+#why{
+    padding:1em;
+    width:33%;
+}
+#why a{
+    color:rgb(233, 1, 194);
+    text-decoration: none;
+}
+#why a:hover{
+    text-decoration: underline;
+    color:#3db1da;
+}
+#why p{
+    font-style: oblique;
+}
+#whatyouget{
+    padding:1em;
+   
+    width:33%
+}
+
+#whatyouget dt, #whatyouget dd{
+    position: relative;
+    padding-left: 3em;
+    margin: 0;
+    margin-bottom: 10px;
+}
+#whatyouget i{
+    color: 	#a1f0eb;
+    font-size:  2.5em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* 
+                S E C T I O N
+                    # 2
+*/
+
+.gallery figure{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+}   
+.gallery figure .miami{
+    width: 25%;
+    padding: 0;
+    position: relative;
+  
+}
+
+.gallery figure img{
+    position: relative;
+    width: 100%;
+
+}
+
+
+
+
+
+
+/* 
+                S E C T I O N
+                    # 3
+*/
+
+#COMMENT .comment_title{
+    text-align: center;
+    margin: 2em;
+}
+
+#COMMENT{
+    font-family: 'Orbitron', sans-serif;
+    padding: 3em 8em;
+}
+#COMMENT .commentaires>.right{
+    text-align: right;
+}
+.commentaires>.right img{
+    text-align: right;
+}
+
+
+.commentaires>blockquote>img{
+    height: 7em;
+}
+.commentaires>.bouton_comment {
+    margin: 50px;   
+    text-align: center; 
+}
+.commentaires>.bouton_comment a{
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 2px solid rgb(58, 70, 95);
+}
+.commentaires>.bouton_comment:hover{
+    font-weight: bold;
+
+}
+.commentaires>.bouton_comment a:hover{
+    color:rgb(233, 1, 194) ;
+}
+/* 
+                S E C T I O N 
+                    # 4
+*/
+
+.SEC_BANNER {
+    background-image: url("images/BANNER4.jpg");
+    padding: 8em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: large;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+}
+.SEC_BANNER p {
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
+    padding: 2em;
+    color: blanchedalmond;
+}
+.SEC_BANNER h1 {
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
+    color: blanchedalmond;
+}
+.SEC_BANNER>.border{
+    background-color:#01e4ff ;
+    border: 2px #01e4ff solid;
+    border-radius: 10%;     
+    width: 80px;
+    margin: auto;
+}
+.SEC_BANNER .bouton-banner-sec{ 
+    margin-top: 4em;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:  rgb(233, 1, 194);
+    background-color: white;
+} 
+.bouton-banner-sec{
+    margin: 3em;
+}
+.bouton-banner-sec:hover{
+    border: 2px solid rgb(58, 70, 95);
+    color:#01e4ff;
+    background-color: rgb(58, 70, 95);
+}
+
+/* 
+                S E C T I O N 
+                    # 5
+*/
+
+.GET-IN-TOUCH h2{
+    margin: 33px;;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+.GET-IN-TOUCH{
+    padding: 3em 8em;
+}
+
+
+
+.info{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.info div{
+    padding: 1em;
+}
+.touch-left{
+    flex: 1;
+}
+.touch-right{
+    flex: 1;
+}
+.info textarea{
+    height: 8em;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.info input {
+    width: 100%;    
+    margin-bottom: 20px;
+    height: 3em;
+}
+.touch-right a{
+    border: solid 2px black;
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.touch-right a:hover{
+    font-weight: bolder;
+}
+/* 
+                S E C T I O N 
+                    # 6
+*/
+.section_fin{
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    background-color: rgb(34, 33, 32);
+    text-align: justify;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3em 8em;
+}
+.line_fin{
+    background-color:rgb(233, 1, 194) ;
+    border: 1px rgb(233, 1, 194) solid;
+    border-radius: 10%;     
+    width: 35px;
+    margin: 0;
+}
+.section_fin .aboutvibes a{
+    color: rgb(233, 1, 194);
+}
+.section_fin .aboutvibes a:hover{
+    color: #01e4ff;
+}
+.section_fin div{
+    margin-right: 2em;
+}
+.aboutvibes{
+    width: 33%;
+}
+.newsletter{
+    width: 33%;
+}
+.newsletter input{
+    display: block;
+}   
+.newsletter a{
+    padding: 5px 10px;
+    text-decoration: none;
+    border: solid 2px rgb(233, 1, 194);
+    color: rgb(233, 1, 194);
+}
+.newsletter a:hover{
+    padding: 5px 10px;
+    text-decoration: none;
+    border: solid 2px #01e4ff;
+    color: #01e4ff;
+}
+.twitterfeed{
+    width: 33%;
+}
+
+/* 
+            F O O T E R 
+*/
+footer{
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+footer>#buy a{
+    text-decoration: none;
+}
+
+#else a{
+    margin: 10px;
+    text-decoration: none;
+}
+
+#else a:hover{
+    text-decoration: underline;
+    color:rgb(233, 1, 194);
+}
+#buy a:hover{
+    text-decoration: underline;
+    color:#01e4ff;
+}
+#else{
+    margin: 15px;
+}
+
+/* 
+    ACCORDION
+*/
+.accordion{
+    width: 33%;
+    margin-top: 19px;
+}
+
+.accordion-part {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+  
+  
+.active, .accordion-part:hover {
+    background-color: #ccc;
+}
+  
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+} 
+/*
+#accordion{
+    padding: 1em;
+}
+#accordion h4, #accordion p{
+    margin: 0;
+}
+
+#accordion p{
+    margin-top: 1rem;
+}
+
+em relatif a la derniere font size enregistré,
+le h4 pose donc prb.
+le rem donne la font size du navigateur par default.
+
+.accordion-part{
+    position: relative;
+    margin-bottom: 1em;
+    border: 1px solid black;
+    padding: 1em 1em 1em 2.5em;
+}
+
+On va placer les icone et caher les paragraphes de ceux qui n'ont pas la classe open
+Par le jeu parent/enfant nous avons la classe 
+
+.accordion-part:not(.acc-open) p{
+    display: none;
+
+}
+.accordion-part i{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+} */

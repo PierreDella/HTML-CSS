@@ -1,0 +1,128 @@
+@media screen and (max-width: 700px){
+    #burger{
+        display: initial;
+    }
+    #top-nav a {
+        color: #01e4ff;
+    }
+    .topbar-logo img{
+        align-content: center;
+        height: 64px;
+
+    }
+    #top-nav a:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        color:rgb(233, 1, 194) ;
+        text-decoration: underline;
+    }
+    header{
+        padding: 0;
+        margin: 1px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .SEC_BANNER {
+        padding: 0;
+    }
+    .SEC_BANNER p{
+        padding: 0;
+    }
+    .SEC_BANNER .bouton-banner-sec {
+        display: flex;
+    }
+    header h1, header p {
+        width: 100%;
+        text-align: none;
+    }
+    .about{
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+    #why{
+        width: 100%;
+    }
+    #whatyouget dt{
+        padding: 0;
+    }
+    #whatyouget{
+        padding: 0;
+        width: 100%;
+    }
+    .accordion{
+        width: 100%;
+    }
+    .accordion-part{
+        text-align: center;
+    }
+    .section_fin {
+        text-align: center;
+        display: block;
+        padding: 0;
+    }
+    .aboutvibes{
+        width: 100%;
+    }
+    .newsletter{
+        width: 100%;
+    }
+    .newsletter p input{
+
+        display: block;
+        margin-left: 25%;
+    }
+    .twitterfeed{
+        width: 100%;
+    }
+    .line_fin{
+        background-color:rgb(233, 1, 194) ;
+        border: 1px rgb(233, 1, 194) solid;
+        border-radius: 10%;     
+        width: 35px;
+        margin-left:48%;
+    }
+    .gallery nav{
+        display: flex;
+        margin: 0;
+    }
+    .gallery div{
+        margin: 0;
+        display: block;
+    }
+    .gallery div a{
+        text-align: center;
+        display: block;
+        margin: 0;
+    }
+
+    
+    .info{
+        text-align: center;
+        flex-direction: column;
+    }
+    #COMMENT{
+        margin: 0;
+        padding: 0;
+    }
+    .gallery figure .miami{
+        width: 100%;
+        padding: 0;
+        position: relative;
+      
+    }
+    #whatyouget i{
+        margin-left: 30px;
+    }
+    footer a{
+        color: #01e4ff;
+        
+    }
+    footer p{
+        color:rgb(233, 1, 194);
+    }
+    .GET-IN-TOUCH {
+        padding: 0;
+    }
+}
